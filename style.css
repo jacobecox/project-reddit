@@ -19,7 +19,9 @@ input {
 button {
   margin: 10px;
   color: white;
-  background-color: skyblue;
+  background-color: rgb(55, 220, 55);
+  border-radius: 5px;
+  border: none;
 }
 
 ul {
@@ -34,4 +36,18 @@ li {
   font-size: 15px;
   font-weight: light;
   font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-remove {
+  font-size: 10px;
+  background-color: red;
+  color: white;
+  height: 20px;
+  width: 50px;
+  border-radius: 5px;
+  border: none;
 }

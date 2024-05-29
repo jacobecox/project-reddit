@@ -1,4 +1,5 @@
-var button = document.getElementsByTagName('button')[0];
+var button = document.getElementsByClassName('btn-submit')[0];
+
 
 
 button.addEventListener('click', function () {
@@ -9,6 +10,11 @@ button.addEventListener('click', function () {
   var userInputTextElement = document.createTextNode(userInputText);
   var userInputNameElement = document.createTextNode(userInputName);
   var element = document.createElement('hr');
+  
+var removeButton = document.createElement('button');
+removeButton.classList.add('btn-remove');
+removeButton.innerHTML = "Remove";
+
   if (userInputText == '' || userInputName == '') {
     alert('Please fill all required fields');
     return;
@@ -18,7 +24,7 @@ button.addEventListener('click', function () {
   nameLi.appendChild(userInputNameElement);
   
   document.getElementsByClassName('posts')[0].append(textLi);
-  document.getElementsByClassName('posts')[0].append('Posted By: ', nameLi, element);
+  document.getElementsByClassName('posts')[0].append('Posted By: ', nameLi, removeButton, element,);
   let output = document.getElementById("output");
             function clearAllInputs(event) {
               var allInputs = document.querySelectorAll("input");
@@ -28,4 +34,9 @@ button.addEventListener('click', function () {
 
 var allInputs = document.querySelectorAll('input');
 allInputs.forEach(singleInput => singleInput.value = '');
+
+removeButton.addEventListener('click', function () {
+  alert('you clicked me');
+})
 });
+
