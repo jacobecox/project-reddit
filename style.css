@@ -8,8 +8,9 @@ body {
 }
 
 hr {
-  border: 1px solid lightgray;
+  border: 1.5px solid black;
   margin: 20px;
+  border-radius: 5px;
 }
 
 input {
@@ -32,6 +33,18 @@ li {
   font-size: 20px;
 }
 
+.post-div {
+  border: 1.5px solid black;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.comment-div {
+  border: 1px solid lightgray;
+  margin: 20px;
+  border-radius: 5px;
+}
+
 .posts {
   font-size: 15px;
   font-weight: light;
@@ -46,6 +59,7 @@ li {
   width: 50px;
   border-radius: 5px;
   border: none;
+  display: block;
 }
 
 .btn-comment {
@@ -56,4 +70,33 @@ li {
   width: 70px;
   border-radius: 5px;
   border: none;
+  display: block;
+}
+
+.btn-submit-comment {
+  font-size: 15px;
+  background-color: rgb(55, 220, 55);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-remove-comment {
+  font-size: 10px;
+  height: 30px;
+  width: 60px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.posted-by,
+.name-li {
+  display: inline;
+}
+
+.comment-posted-by,
+.comment-name-li {
+  display: inline;
 }
