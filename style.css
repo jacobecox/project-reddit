@@ -5,16 +5,12 @@ header {
 
 body {
   font-size: 20px;
+  margin: 20px;
 }
 
 hr {
   border: 1.5px solid black;
-  margin: 20px;
   border-radius: 5px;
-}
-
-input {
-  margin: 20px;
 }
 
 button {
@@ -25,23 +21,26 @@ button {
   border: none;
 }
 
+input {
+  margin: 20px;
+}
+
 ul {
   list-style-type: none;
 }
 
 li {
   font-size: 20px;
+  list-style-type: none;
 }
 
 .post-div {
   border: 1.5px solid black;
-  margin: 20px;
   border-radius: 5px;
 }
 
 .comment-div {
   border: 1px solid lightgray;
-  margin: 20px;
   border-radius: 5px;
 }
 
@@ -92,11 +91,17 @@ li {
 }
 
 .posted-by,
-.name-li {
+.name-li,
+.comment-name {
   display: inline;
 }
 
-.comment-posted-by,
-.comment-name-li {
+.comment-posted-by {
   display: inline;
+}
+
+.comment-box,
+.name-box,
+.btn-submit-comment {
+  visibility: visible;
 }
